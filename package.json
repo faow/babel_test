@@ -1,0 +1,27 @@
+{
+  "name": "babel_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "npx babel \"*/src\" --out-dir ../webapp --source-maps true --extensions \".ts\" --copy-files --include-dotfiles --relative --verbose",
+    "babelWatch": "npx babel \"*/src\" --out-dir ../webapp --source-maps true --extensions \".ts\" --copy-files --include-dotfiles --relative --watch --verbose",
+    "resetFiles": "rimraf */webapp */src/*.js*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faow/babel_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faow/babel_test/issues"
+  },
+  "homepage": "https://github.com/faow/babel_test#readme",
+  "devDependencies": {
+    "@babel/cli": "7.17.0",
+    "@babel/core": "7.17.2",
+    "@babel/preset-typescript": "7.16.7",
+    "rimraf": "3.0.2"
+  }
+}

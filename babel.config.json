@@ -1,0 +1,13 @@
+{
+    "ignore": [
+        "**/*.d.ts",
+        "**/node_modules/**"
+    ],
+    "presets": [
+        "@babel/preset-typescript"
+    ],
+    "babelrcRoots": [
+        ".",
+        "subFolder*/*"
+    ]
+}
